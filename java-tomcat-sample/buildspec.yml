@@ -1,15 +1,14 @@
 version: 0.1
 
+
 phases:
   install:
     commands:
-    - echo installing maven...
-    - yum install -y maven
+    - echo installing maven ...
+    - mvn clean install -f pom.xml
   build:
     commands:
-      - echo Build completed on `date`
-      - mvn clean install -f pom.xml
-
+    - echo build completed
 artifacts:
   files:
-    - '**/*' 
+    - '**/*.war'  
