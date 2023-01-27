@@ -9,7 +9,6 @@ phases:
   build:
     commands:
     - echo build completed
-    
- artifacts:
-   files:
-     - '**/*.war 
+artifacts:
+  files:
+    - '**/*.war 
