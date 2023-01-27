@@ -11,4 +11,4 @@ phases:
     - echo build completed
 artifacts:
   files:
-    - '**/*.war 
+    - '**/*.war' 
