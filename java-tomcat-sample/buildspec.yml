@@ -1,0 +1,15 @@
+version: 0.1
+
+
+phases:
+  install:
+    commands:
+    - echo installing maven ...
+    - mvn clean install -f pom.xml
+  build:
+    commands:
+    - echo build completed
+    
+ artifacts:
+   files:
+     - '**/*.war 
